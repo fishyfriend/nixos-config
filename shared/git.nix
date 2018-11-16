@@ -2,5 +2,7 @@
 
 {
   environment.systemPackages = [ pkgs.git ];
-  services.locate.pruneNames = [ ".git" ];
+
+  # Only works with mlocate, not GNU findutils locate
+  #services.locate.pruneNames = [ ".git" ];
 }
