@@ -16,9 +16,9 @@ nixos-config contains the system configurations for my personal computers runnin
 
     {
       users.users = {
-        martha = {
+        marilyn = {
           uid = 1000;
-          home = /home/martha;
+          home = /home/marilyn;
           group = "wheel";
           extraGroups = [ "audio" ];
           # etc.
