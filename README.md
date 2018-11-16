@@ -25,13 +25,17 @@ nixos-config contains the system configurations for my personal computers runnin
 
 # Installation
 
-To set up NixOS using this repository, you replace `/etc/nixos/configuration.nix` with a symlink to one of the host configurations. Example:
+To set up NixOS using this repository, you must replace `/etc/nixos/configuration.nix` with a symlink to one of the host configurations. You must also create a `private/users.nix` file as described above.
+
+Example:
 
     cd ~/code
     git clone git@github.com:fishyfriend/nixos-config
-    sudo nixos-generate-config
     sudo mv /etc/nixos/configuration.nix /backups
     sudo ln -s ~/code/nixos-config/hosts/martha.nix /etc/nixos/configuration.nix
+    sudo nixos-generate-config
+    mkdir private
+    vi private/users.nix
     sudo nixos-rebuild switch
 
 # Further reading
