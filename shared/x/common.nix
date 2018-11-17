@@ -13,9 +13,12 @@
     displayManager.lightdm.enable = true;
     windowManager.default = "xmonad";
     desktopManager.default = "none";
+
+    displayManager.sessionCommands = "xcompmgr -n &";
   };
 
   environment.systemPackages = with pkgs; [
     xclip
+    xorg.xcompmgr
   ];
 }
