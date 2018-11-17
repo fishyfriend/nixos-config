@@ -9,9 +9,10 @@
   services.xserver = {
     enable = true;
     layout = "us";
-    desktopManager.default = "none";
+
     displayManager.lightdm.enable = true;
     windowManager.default = "xmonad";
+    desktopManager.default = "none";
   };
 
   environment.systemPackages = with pkgs; [
