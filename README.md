@@ -1,4 +1,6 @@
-nixos-config contains the system configurations for my personal computers running NixOS.
+*ARCHIVED*
+
+nixos-config contained the system configurations for my personal computer running NixOS. It was superseded by my config repository on Nov. 18, 2018, on which date its source tree was copied verbatim into the `nixos/` subdirectory there. The revision history was not copied, so the present archive is kept for the purpose of preserving it.
 
 # Layout
 
